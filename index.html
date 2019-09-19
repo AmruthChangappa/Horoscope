@@ -1,0 +1,143 @@
+<html>
+  <head>
+    <title>Horoscope</title>
+    <style>
+      body{
+        margin: 0px;
+        background-image: url("horoback.jpg");
+      }
+      #banner{
+        width: 100%;
+      }
+      #inputm{
+        margin-left: 8px;
+      }
+      #output{
+        font-size: 120px;
+        color: yellow;
+      }
+      .fortune{
+        margin: 0px;
+        font-size: 50px;
+      }
+    </style>
+    <script>
+      function test(){
+        var month = document.getElementById('inputm').value;
+          month = parseInt(month);
+        var day = document.getElementById('inputd').value;
+          day = parseInt(day);
+        if (month == 1) {
+          if (day <= 19) {
+            document.getElementById('output').innerHTML = "<img src='.capricorn.jpg'><br><p class='fortune'>You may receive a windfall from an unexpected source, Capricorn. Perhaps an uncle died and remembered you in his will or an old legal settlement has finally come through. Whatever the source, the extra income is welcome now. Your vivid dreams of late may not seem related to this financial upswing, but they're connected.</p>";
+          }else if (day > 19) {
+            document.getElementById('output').innerHTML = "<img src='.aquarius.jpg'><br><p class='fortune'>You receive some new insight about an important person in your life, Aquarius, and your relationship takes a dramatic turn for the better. You feel you now know this person completely, and your closeness borders on the profound. This new alliance could also have positive repercussions on your finances.</p>";
+          }else {
+            document.getElementById('output').innerHTML = "ERROR";
+          }
+        }else if (month == 2) {
+          if (day <= 18) {
+            document.getElementById('output').innerHTML = "<img src='.aquarius.jpg'><br><p class='fortune'>You receive some new insight about an important person in your life, Aquarius, and your relationship takes a dramatic turn for the better. You feel you now know this person completely, and your closeness borders on the profound. This new alliance could also have positive repercussions on your finances.</p>";
+          }else if (day > 18) {
+            document.getElementById('output').innerHTML = "<img src='.pisces.jpg'><br><p class='fortune'>When the thought of going to work makes it hard to get out of bed, know that the time has come to get another job, Pisces. Alas, that's probably not something you can do now. You can be extra kind to yourself. Give yourself a present. Find something you thoroughly enjoy that would perk up your spirits and cost little.</p>";
+          }else {
+            document.getElementById('output').innerHTML = "ERROR";
+          }
+        }else if (month == 3) {
+          if (day <= 20) {
+            document.getElementById('output').innerHTML = "<img src='.pisces.jpg'><br><p class='fortune'>When the thought of going to work makes it hard to get out of bed, know that the time has come to get another job, Pisces. Alas, that's probably not something you can do now. You can be extra kind to yourself. Give yourself a present. Find something you thoroughly enjoy that would perk up your spirits and cost little.</p>";
+          }else if (day > 20) {
+            document.getElementById('output').innerHTML = "<img src='.aries.jpg'><br><p class='fortune'>Romance is in the air and you must be breathing a lot of it today, Aries. Your blood is boiling, your passion surging, and a romantic dinner for two is in the cards. You'll be inclined to shop for clothes, but curb your appetite for material goods. What you really want doesn't come in a box, so why waste your money?</p>";
+          }else {
+            document.getElementById('output').innerHTML = "ERROR";
+          }
+        }else if (month == 4) {
+          if (day <= 19) {
+            document.getElementById('output').innerHTML = "<img src='.aries.jpg'><br><p class='fortune'>Romance is in the air and you must be breathing a lot of it today, Aries. Your blood is boiling, your passion surging, and a romantic dinner for two is in the cards. You'll be inclined to shop for clothes, but curb your appetite for material goods. What you really want doesn't come in a box, so why waste your money?</p>";
+          }else if (day > 19) {
+            document.getElementById('output').innerHTML = "<img src='.taurus.jpg'><br><p class='fortune'>You'll be happiest away from prying eyes today, Taurus. You're not in the mood to be friendly or participate in idle gossip. It seems you've been having the same conversations with the same people for some time now. You're feeling so bored you could scream. To avoid doing just that, spend quiet time alone today if you can.</p>";
+          }else {
+            document.getElementById('output').innerHTML = "ERROR";
+          }
+        }else if (month == 5) {
+          if (day <= 20) {
+            document.getElementById('output').innerHTML = "<img src='.taurus.jpg'><br><p class='fortune'>You'll be happiest away from prying eyes today, Taurus. You're not in the mood to be friendly or participate in idle gossip. It seems you've been having the same conversations with the same people for some time now. You're feeling so bored you could scream. To avoid doing just that, spend quiet time alone today if you can.</p>";
+          }else if (day > 20) {
+            document.getElementById('output').innerHTML = "<img src='.gemini.jpg'><br><p class='fortune'>Just when you thought things were settled, life takes another turn. Today brings yet another of those turns, so hold on, Gemini. You may receive some information that has a dramatic impact on your life. Perhaps you'll receive an opportunity to move to another state or country. Perhaps you'll decide to get married. One thing is clear - your future looks promising!</p>";
+          }else {
+            document.getElementById('output').innerHTML = "ERROR";
+          }
+        }else if (month == 6) {
+          if (day <= 20) {
+            document.getElementById('output').innerHTML = "<img src='.gemini.jpg'><br><p class='fortune'>Just when you thought things were settled, life takes another turn. Today brings yet another of those turns, so hold on, Gemini. You may receive some information that has a dramatic impact on your life. Perhaps you'll receive an opportunity to move to another state or country. Perhaps you'll decide to get married. One thing is clear - your future looks promising!</p>";
+          }else if (day > 20) {
+            document.getElementById('output').innerHTML = "<img src='.cancer.jpg'><br><p class='fortune'>You should feel optimistic today, Cancer, with confidence in your ability to accomplish anything you set your mind to. If you're working toward a specific goal (and you should be), something is likely to happen today that propels you that much closer to realizing your goal. What's the next step?</p>";
+          }else {
+            document.getElementById('output').innerHTML = "ERROR";
+          }
+        }else if (month == 7) {
+          if (day <= 22) {
+            document.getElementById('output').innerHTML = "<img src='.cancer.jpg'><br><p class='fortune'>You should feel optimistic today, Cancer, with confidence in your ability to accomplish anything you set your mind to. If you're working toward a specific goal (and you should be), something is likely to happen today that propels you that much closer to realizing your goal. What's the next step?</p>";
+          }else if (day > 22) {
+            document.getElementById('output').innerHTML = "<img src='.leo.jpg'><br><p class='fortune'>You can expect some big changes, Leo. All the hard work you've been doing to develop your confidence is showing, and this is attracting opportunities like bees to honey. On top of this, your passion is high right now, so set aside private time with your mate. Plan a romantic evening, open a bottle of wine, and celebrate!</p>";
+          }else {
+            document.getElementById('output').innerHTML = "ERROR";
+          }
+        }else if (month == 8) {
+          if (day <= 22) {
+            document.getElementById('output').innerHTML = "<img src='.leo.jpg'><br><p class='fortune'>You can expect some big changes, Leo. All the hard work you've been doing to develop your confidence is showing, and this is attracting opportunities like bees to honey. On top of this, your passion is high right now, so set aside private time with your mate. Plan a romantic evening, open a bottle of wine, and celebrate!</p>";
+          }else if (day > 22) {
+            document.getElementById('output').innerHTML = "<img src='.virgo.jpg'><br><p class='fortune'>Don't overreact today, Virgo. Your biorhythms are low. In fact, you may be feeling a bit under the weather. There's no point in trying to keep up a cheerful front. People will see through your facade. You would be better served by spending time on solo activities. That way you can spend long stretches of time in bed, where you're meant to be today.</p>";
+          }else {
+            document.getElementById('output').innerHTML = "ERROR";
+          }
+        }else if (month == 9) {
+          if (day <= 22) {
+            document.getElementById('output').innerHTML = "<img src='.virgo.jpg'><br><p class='fortune'>Don't overreact today, Virgo. Your biorhythms are low. In fact, you may be feeling a bit under the weather. There's no point in trying to keep up a cheerful front. People will see through your facade. You would be better served by spending time on solo activities. That way you can spend long stretches of time in bed, where you're meant to be today.</p>";
+          }else if (day > 22) {
+            document.getElementById('output').innerHTML = "<img src='.libra.jpg'><br><p class='fortune'>A long-term project reaches a positive conclusion, one that may have a dramatic impact on your finances. You've sold your manuscript to a publisher or successfully concluded a project that's dear to your heart. This success should give you the confidence you need, Libra. Don't forget to take time to celebrate!</p>";
+          }else {
+            document.getElementById('output').innerHTML = "ERROR";
+          }
+        }else if (month == 10) {
+          if (day <= 22) {
+            document.getElementById('output').innerHTML = "<img src='.libra.jpg'><br><p class='fortune'>A long-term project reaches a positive conclusion, one that may have a dramatic impact on your finances. You've sold your manuscript to a publisher or successfully concluded a project that's dear to your heart. This success should give you the confidence you need, Libra. Don't forget to take time to celebrate!</p>";
+          }else if (day > 22) {
+            document.getElementById('output').innerHTML = "<img src='.scorpio.jpg'><br><p class='fortune'>Change is good, but it can be scary when it comes suddenly. That's what you feel today when someone announces a major change without warning. You're not sure how to react to the news and haven't a clue how it affects you. All you can do now is wait. Try not to panic. In the end, you'll see that these changes will benefit everyone, including you!</p>";
+          }else {
+            document.getElementById('output').innerHTML = "ERROR";
+          }
+        }else if (month == 11) {
+          if (day <= 21) {
+            document.getElementById('output').innerHTML = "<img src='.scorpio.jpg'><br><p class='fortune'>Change is good, but it can be scary when it comes suddenly. That's what you feel today when someone announces a major change without warning. You're not sure how to react to the news and haven't a clue how it affects you. All you can do now is wait. Try not to panic. In the end, you'll see that these changes will benefit everyone, including you!</p>";
+          }else if (day > 21) {
+            document.getElementById('output').innerHTML = "<img src='.sagittarius.jpg'><br><p class='fortune'>Just when you thought things were settled, life takes another turn. Today brings yet another of those turns, so hold on, Gemini. You may receive some information that has a dramatic impact on your life. Perhaps you'll receive an opportunity to move to another state or country. Perhaps you'll decide to get married. One thing is clear - your future looks promising!</p>";
+          }else {
+            document.getElementById('output').innerHTML = "ERROR";
+          }
+        }else if (month == 12) {
+          if (day <= 21) {
+            document.getElementById('output').innerHTML = "<img src='.sagittarius.jpg'><br><p class='fortune'>Just when you thought things were settled, life takes another turn. Today brings yet another of those turns, so hold on, Gemini. You may receive some information that has a dramatic impact on your life. Perhaps you'll receive an opportunity to move to another state or country. Perhaps you'll decide to get married. One thing is clear - your future looks promising!</p>";
+          }else if (day > 21) {
+            document.getElementById('output').innerHTML = "<img src='.capricorn.jpg'><br><p class='fortune'>You may receive a windfall from an unexpected source, Capricorn. Perhaps an uncle died and remembered you in his will or an old legal settlement has finally come through. Whatever the source, the extra income is welcome now. Your vivid dreams of late may not seem related to this financial upswing, but they're connected.</p>";
+          }else {
+            document.getElementById('output').innerHTML = "ERROR";
+          }
+        }else {
+          document.getElementById('output').innerHTML = "ERROR";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <img id="banner" src="horoscope.jpg">
+    <br>
+    <div>
+      <input id="inputm" type="text" value="Enter Birth Month">
+      <input id="inputd" type="text" value="Enter Birthday">
+      <input type="button" onclick="test()" value="Get Horoscope">
+      <br>
+      <span id="output"></span>
+    </div>
+  </body>
+</html>
